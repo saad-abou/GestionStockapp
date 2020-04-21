@@ -1,0 +1,18 @@
+<h2>Entreprise Details</h2>
+
+<hr/>
+<div *ngIf="client">
+  <div>
+    <label><b>Name: </b></label> {{client.nom}}
+  </div>
+  <div>
+    <label><b>Ice: </b></label> {{client.ice}}
+  </div>
+  <div>
+    <label><b>Rc: </b></label> {{client.rc}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Entreprise List</button><br>
